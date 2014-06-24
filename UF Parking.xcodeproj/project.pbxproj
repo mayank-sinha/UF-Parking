@@ -11,7 +11,7 @@
 		A8BD24EE195A1C5B00D9018D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BD24ED195A1C5B00D9018D /* CoreGraphics.framework */; };
 		A8BD24F0195A1C5B00D9018D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BD24EF195A1C5B00D9018D /* UIKit.framework */; };
 		A8BD24F6195A1C5B00D9018D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8BD24F4195A1C5B00D9018D /* InfoPlist.strings */; };
-		A8BD24F8195A1C5B00D9018D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BD24F7195A1C5B00D9018D /* main.m */; };
+		A8BD24F8195A1C5B00D9018D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BD24F7195A1C5B00D9018D /* main.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A8BD24FC195A1C5B00D9018D /* UFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BD24FB195A1C5B00D9018D /* UFAppDelegate.m */; };
 		A8BD24FF195A1C5B00D9018D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8BD24FD195A1C5B00D9018D /* Main.storyboard */; };
 		A8BD2502195A1C5B00D9018D /* UFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BD2501195A1C5B00D9018D /* UFViewController.m */; };
@@ -21,6 +21,11 @@
 		A8BD250D195A1C5C00D9018D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BD24EF195A1C5B00D9018D /* UIKit.framework */; };
 		A8BD2515195A1C5C00D9018D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8BD2513195A1C5C00D9018D /* InfoPlist.strings */; };
 		A8BD2517195A1C5C00D9018D /* UF_ParkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BD2516195A1C5C00D9018D /* UF_ParkingTests.m */; };
+		A8BD2521195A1C9700D9018D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BD2520195A1C9700D9018D /* MapKit.framework */; };
+		A8BD2524195A1DBC00D9018D /* UFDecalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BD2523195A1DBC00D9018D /* UFDecalTableViewController.m */; };
+		A8BD2527195A1E7200D9018D /* UFKMLData.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BD2526195A1E7200D9018D /* UFKMLData.m */; };
+		A8BD252A195A1EFA00D9018D /* UFKMLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BD2529195A1EFA00D9018D /* UFKMLObject.m */; };
+		A8BD252D195A1FA300D9018D /* UFKMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BD252C195A1FA300D9018D /* UFKMLParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,15 @@
 		A8BD2512195A1C5C00D9018D /* UF ParkingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UF ParkingTests-Info.plist"; sourceTree = "<group>"; };
 		A8BD2514195A1C5C00D9018D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A8BD2516195A1C5C00D9018D /* UF_ParkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UF_ParkingTests.m; sourceTree = "<group>"; };
+		A8BD2520195A1C9700D9018D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A8BD2522195A1DBC00D9018D /* UFDecalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UFDecalTableViewController.h; path = ../UFDecalTableViewController.h; sourceTree = "<group>"; };
+		A8BD2523195A1DBC00D9018D /* UFDecalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UFDecalTableViewController.m; path = ../UFDecalTableViewController.m; sourceTree = "<group>"; };
+		A8BD2525195A1E7200D9018D /* UFKMLData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UFKMLData.h; sourceTree = "<group>"; };
+		A8BD2526195A1E7200D9018D /* UFKMLData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UFKMLData.m; sourceTree = "<group>"; };
+		A8BD2528195A1EFA00D9018D /* UFKMLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UFKMLObject.h; sourceTree = "<group>"; };
+		A8BD2529195A1EFA00D9018D /* UFKMLObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UFKMLObject.m; sourceTree = "<group>"; };
+		A8BD252B195A1FA300D9018D /* UFKMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UFKMLParser.h; sourceTree = "<group>"; };
+		A8BD252C195A1FA300D9018D /* UFKMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UFKMLParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8BD2521195A1C9700D9018D /* MapKit.framework in Frameworks */,
 				A8BD24EE195A1C5B00D9018D /* CoreGraphics.framework in Frameworks */,
 				A8BD24F0195A1C5B00D9018D /* UIKit.framework in Frameworks */,
 				A8BD24EC195A1C5B00D9018D /* Foundation.framework in Frameworks */,
@@ -101,6 +116,7 @@
 		A8BD24EA195A1C5B00D9018D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A8BD2520195A1C9700D9018D /* MapKit.framework */,
 				A8BD24EB195A1C5B00D9018D /* Foundation.framework */,
 				A8BD24ED195A1C5B00D9018D /* CoreGraphics.framework */,
 				A8BD24EF195A1C5B00D9018D /* UIKit.framework */,
@@ -115,8 +131,16 @@
 				A8BD24FA195A1C5B00D9018D /* UFAppDelegate.h */,
 				A8BD24FB195A1C5B00D9018D /* UFAppDelegate.m */,
 				A8BD24FD195A1C5B00D9018D /* Main.storyboard */,
+				A8BD2522195A1DBC00D9018D /* UFDecalTableViewController.h */,
+				A8BD2523195A1DBC00D9018D /* UFDecalTableViewController.m */,
 				A8BD2500195A1C5B00D9018D /* UFViewController.h */,
 				A8BD2501195A1C5B00D9018D /* UFViewController.m */,
+				A8BD2525195A1E7200D9018D /* UFKMLData.h */,
+				A8BD2526195A1E7200D9018D /* UFKMLData.m */,
+				A8BD2528195A1EFA00D9018D /* UFKMLObject.h */,
+				A8BD2529195A1EFA00D9018D /* UFKMLObject.m */,
+				A8BD252B195A1FA300D9018D /* UFKMLParser.h */,
+				A8BD252C195A1FA300D9018D /* UFKMLParser.m */,
 				A8BD2503195A1C5B00D9018D /* Images.xcassets */,
 				A8BD24F2195A1C5B00D9018D /* Supporting Files */,
 			);
@@ -200,6 +224,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "University of Florida";
 				TargetAttributes = {
+					A8BD24E7195A1C5B00D9018D = {
+						DevelopmentTeam = 8S5N9N3559;
+					};
 					A8BD2508195A1C5C00D9018D = {
 						TestTargetID = A8BD24E7195A1C5B00D9018D;
 					};
@@ -252,6 +279,10 @@
 			files = (
 				A8BD24F8195A1C5B00D9018D /* main.m in Sources */,
 				A8BD24FC195A1C5B00D9018D /* UFAppDelegate.m in Sources */,
+				A8BD252D195A1FA300D9018D /* UFKMLParser.m in Sources */,
+				A8BD2524195A1DBC00D9018D /* UFDecalTableViewController.m in Sources */,
+				A8BD2527195A1E7200D9018D /* UFKMLData.m in Sources */,
+				A8BD252A195A1EFA00D9018D /* UFKMLObject.m in Sources */,
 				A8BD2502195A1C5B00D9018D /* UFViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -366,7 +397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -377,9 +408,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UF Parking/UF Parking-Prefix.pch";
 				INFOPLIST_FILE = "UF Parking/UF Parking-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -390,9 +423,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UF Parking/UF Parking-Prefix.pch";
 				INFOPLIST_FILE = "UF Parking/UF Parking-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
