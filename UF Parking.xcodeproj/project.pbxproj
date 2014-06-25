@@ -26,6 +26,21 @@
 		A8BD2527195A1E7200D9018D /* UFKMLData.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BD2526195A1E7200D9018D /* UFKMLData.m */; };
 		A8BD252A195A1EFA00D9018D /* UFKMLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BD2529195A1EFA00D9018D /* UFKMLObject.m */; };
 		A8BD252D195A1FA300D9018D /* UFKMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BD252C195A1FA300D9018D /* UFKMLParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A8BE08AE195B34EB00D321B2 /* allDecal.kml in Resources */ = {isa = PBXBuildFile; fileRef = A8BE089F195B34EA00D321B2 /* allDecal.kml */; };
+		A8BE08AF195B34EB00D321B2 /* allNPR.kml in Resources */ = {isa = PBXBuildFile; fileRef = A8BE08A0195B34EA00D321B2 /* allNPR.kml */; };
+		A8BE08B0195B34EB00D321B2 /* allRed.kml in Resources */ = {isa = PBXBuildFile; fileRef = A8BE08A1195B34EA00D321B2 /* allRed.kml */; };
+		A8BE08B1195B34EB00D321B2 /* blue.kml in Resources */ = {isa = PBXBuildFile; fileRef = A8BE08A2195B34EA00D321B2 /* blue.kml */; };
+		A8BE08B2195B34EB00D321B2 /* commuter.kml in Resources */ = {isa = PBXBuildFile; fileRef = A8BE08A3195B34EA00D321B2 /* commuter.kml */; };
+		A8BE08B3195B34EB00D321B2 /* disabled.kml in Resources */ = {isa = PBXBuildFile; fileRef = A8BE08A4195B34EA00D321B2 /* disabled.kml */; };
+		A8BE08B4195B34EB00D321B2 /* gated.kml in Resources */ = {isa = PBXBuildFile; fileRef = A8BE08A5195B34EA00D321B2 /* gated.kml */; };
+		A8BE08B5195B34EB00D321B2 /* medRes.kml in Resources */ = {isa = PBXBuildFile; fileRef = A8BE08A6195B34EA00D321B2 /* medRes.kml */; };
+		A8BE08B6195B34EB00D321B2 /* meters.kml in Resources */ = {isa = PBXBuildFile; fileRef = A8BE08A7195B34EA00D321B2 /* meters.kml */; };
+		A8BE08B7195B34EB00D321B2 /* orange.kml in Resources */ = {isa = PBXBuildFile; fileRef = A8BE08A8195B34EA00D321B2 /* orange.kml */; };
+		A8BE08B8195B34EB00D321B2 /* red1.kml in Resources */ = {isa = PBXBuildFile; fileRef = A8BE08A9195B34EB00D321B2 /* red1.kml */; };
+		A8BE08B9195B34EB00D321B2 /* scooter.kml in Resources */ = {isa = PBXBuildFile; fileRef = A8BE08AA195B34EB00D321B2 /* scooter.kml */; };
+		A8BE08BA195B34EB00D321B2 /* sD.kml in Resources */ = {isa = PBXBuildFile; fileRef = A8BE08AB195B34EB00D321B2 /* sD.kml */; };
+		A8BE08BB195B34EB00D321B2 /* state.kml in Resources */ = {isa = PBXBuildFile; fileRef = A8BE08AC195B34EB00D321B2 /* state.kml */; };
+		A8BE08BC195B34EB00D321B2 /* visitor.kml in Resources */ = {isa = PBXBuildFile; fileRef = A8BE08AD195B34EB00D321B2 /* visitor.kml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +82,21 @@
 		A8BD2529195A1EFA00D9018D /* UFKMLObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UFKMLObject.m; sourceTree = "<group>"; };
 		A8BD252B195A1FA300D9018D /* UFKMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UFKMLParser.h; sourceTree = "<group>"; };
 		A8BD252C195A1FA300D9018D /* UFKMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UFKMLParser.m; sourceTree = "<group>"; };
+		A8BE089F195B34EA00D321B2 /* allDecal.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = allDecal.kml; path = ../../KMLs/allDecal.kml; sourceTree = "<group>"; };
+		A8BE08A0195B34EA00D321B2 /* allNPR.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = allNPR.kml; path = ../../KMLs/allNPR.kml; sourceTree = "<group>"; };
+		A8BE08A1195B34EA00D321B2 /* allRed.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = allRed.kml; path = ../../KMLs/allRed.kml; sourceTree = "<group>"; };
+		A8BE08A2195B34EA00D321B2 /* blue.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = blue.kml; path = ../../KMLs/blue.kml; sourceTree = "<group>"; };
+		A8BE08A3195B34EA00D321B2 /* commuter.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = commuter.kml; path = ../../KMLs/commuter.kml; sourceTree = "<group>"; };
+		A8BE08A4195B34EA00D321B2 /* disabled.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = disabled.kml; path = ../../KMLs/disabled.kml; sourceTree = "<group>"; };
+		A8BE08A5195B34EA00D321B2 /* gated.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = gated.kml; path = ../../KMLs/gated.kml; sourceTree = "<group>"; };
+		A8BE08A6195B34EA00D321B2 /* medRes.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = medRes.kml; path = ../../KMLs/medRes.kml; sourceTree = "<group>"; };
+		A8BE08A7195B34EA00D321B2 /* meters.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = meters.kml; path = ../../KMLs/meters.kml; sourceTree = "<group>"; };
+		A8BE08A8195B34EA00D321B2 /* orange.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = orange.kml; path = ../../KMLs/orange.kml; sourceTree = "<group>"; };
+		A8BE08A9195B34EB00D321B2 /* red1.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = red1.kml; path = ../../KMLs/red1.kml; sourceTree = "<group>"; };
+		A8BE08AA195B34EB00D321B2 /* scooter.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = scooter.kml; path = ../../KMLs/scooter.kml; sourceTree = "<group>"; };
+		A8BE08AB195B34EB00D321B2 /* sD.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sD.kml; path = ../../KMLs/sD.kml; sourceTree = "<group>"; };
+		A8BE08AC195B34EB00D321B2 /* state.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = state.kml; path = ../../KMLs/state.kml; sourceTree = "<group>"; };
+		A8BE08AD195B34EB00D321B2 /* visitor.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = visitor.kml; path = ../../KMLs/visitor.kml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +127,7 @@
 		A8BD24DF195A1C5B00D9018D = {
 			isa = PBXGroup;
 			children = (
+				A8BE089E195B34A000D321B2 /* Decals */,
 				A8BD24F1195A1C5B00D9018D /* UF Parking */,
 				A8BD2510195A1C5C00D9018D /* UF ParkingTests */,
 				A8BD24EA195A1C5B00D9018D /* Frameworks */,
@@ -174,6 +205,28 @@
 				A8BD2513195A1C5C00D9018D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8BE089E195B34A000D321B2 /* Decals */ = {
+			isa = PBXGroup;
+			children = (
+				A8BE089F195B34EA00D321B2 /* allDecal.kml */,
+				A8BE08A0195B34EA00D321B2 /* allNPR.kml */,
+				A8BE08A1195B34EA00D321B2 /* allRed.kml */,
+				A8BE08A2195B34EA00D321B2 /* blue.kml */,
+				A8BE08A3195B34EA00D321B2 /* commuter.kml */,
+				A8BE08A4195B34EA00D321B2 /* disabled.kml */,
+				A8BE08A5195B34EA00D321B2 /* gated.kml */,
+				A8BE08A6195B34EA00D321B2 /* medRes.kml */,
+				A8BE08A7195B34EA00D321B2 /* meters.kml */,
+				A8BE08A8195B34EA00D321B2 /* orange.kml */,
+				A8BE08A9195B34EB00D321B2 /* red1.kml */,
+				A8BE08AA195B34EB00D321B2 /* scooter.kml */,
+				A8BE08AB195B34EB00D321B2 /* sD.kml */,
+				A8BE08AC195B34EB00D321B2 /* state.kml */,
+				A8BE08AD195B34EB00D321B2 /* visitor.kml */,
+			);
+			name = Decals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,9 +309,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8BE08B8195B34EB00D321B2 /* red1.kml in Resources */,
+				A8BE08B0195B34EB00D321B2 /* allRed.kml in Resources */,
+				A8BE08AE195B34EB00D321B2 /* allDecal.kml in Resources */,
+				A8BE08B4195B34EB00D321B2 /* gated.kml in Resources */,
+				A8BE08B2195B34EB00D321B2 /* commuter.kml in Resources */,
+				A8BE08BB195B34EB00D321B2 /* state.kml in Resources */,
+				A8BE08B9195B34EB00D321B2 /* scooter.kml in Resources */,
+				A8BE08B6195B34EB00D321B2 /* meters.kml in Resources */,
 				A8BD2504195A1C5B00D9018D /* Images.xcassets in Resources */,
+				A8BE08B3195B34EB00D321B2 /* disabled.kml in Resources */,
+				A8BE08B5195B34EB00D321B2 /* medRes.kml in Resources */,
+				A8BE08B1195B34EB00D321B2 /* blue.kml in Resources */,
 				A8BD24F6195A1C5B00D9018D /* InfoPlist.strings in Resources */,
 				A8BD24FF195A1C5B00D9018D /* Main.storyboard in Resources */,
+				A8BE08B7195B34EB00D321B2 /* orange.kml in Resources */,
+				A8BE08AF195B34EB00D321B2 /* allNPR.kml in Resources */,
+				A8BE08BA195B34EB00D321B2 /* sD.kml in Resources */,
+				A8BE08BC195B34EB00D321B2 /* visitor.kml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +560,7 @@
 				A8BD251C195A1C5C00D9018D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8BD251D195A1C5C00D9018D /* Build configuration list for PBXNativeTarget "UF ParkingTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +569,7 @@
 				A8BD251F195A1C5C00D9018D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="14A238x" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hyn-SV-EIC">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
     </dependencies>
     <scenes>
@@ -26,7 +27,7 @@
         <!--View Controller - Map View Controller-->
         <scene sceneID="dcz-LS-Zjz">
             <objects>
-                <viewController title="Map View Controller" id="SwN-Zc-qTK" sceneMemberID="viewController">
+                <viewController title="Map View Controller" id="SwN-Zc-qTK" customClass="UFViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I5G-dg-efd"/>
                         <viewControllerLayoutGuide type="bottom" id="9Jy-kU-ydN"/>
@@ -51,21 +52,24 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="CED-kb-U2w" id="sN6-YC-Sd9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cQ-Iy-leF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1539" y="32"/>
         </scene>
-        <!--Table View Controller - Decal View Controller-->
+        <!--Decal Table View Controller - Decal View Controller-->
         <scene sceneID="O4N-1L-UcP">
             <objects>
-                <tableViewController title="Decal View Controller" id="XFO-Em-MD7" sceneMemberID="viewController">
+                <tableViewController title="Decal View Controller" id="XFO-Em-MD7" customClass="UFDecalTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="oXi-lu-Wxu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="fiA-Ag-gfn" detailTextLabel="o2V-p0-1Hl" style="IBUITableViewCellStyleSubtitle" id="Hfr-rm-yr5">
+                            <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="fiA-Ag-gfn" detailTextLabel="o2V-p0-1Hl" style="IBUITableViewCellStyleSubtitle" id="Hfr-rm-yr5">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hfr-rm-yr5" id="gsj-iq-eLr">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -88,11 +92,15 @@
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="XFO-Em-MD7" id="H5W-MQ-76k"/>
-                            <outlet property="delegate" destination="XFO-Em-MD7" id="wZM-T6-quO"/>
+                            <outlet property="delegate" destination="XFO-Em-MD7" id="st1-9b-FLm"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Decals" id="lk5-lk-xdh">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="PtW-81-4ei"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="PtW-81-4ei">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="XFO-Em-MD7" id="gNG-an-wmJ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mS1-db-GrL" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -13,7 +13,7 @@
 #import "UFKMLParser.h"
 
 
-@interface UFLViewController : UIViewController <UFLDecalTableViewControllerDelegate, MKMapViewDelegate>{
+@interface UFViewController : UIViewController <UFDecalTableViewControllerDelegate, MKMapViewDelegate>{
     
     MKMapView *mapView;
     KMLParser *kmlParser;

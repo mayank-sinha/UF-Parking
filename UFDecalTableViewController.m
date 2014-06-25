@@ -11,11 +11,11 @@
 #import "UFKMLObject.h"
 #import "UFViewController.h"
 
-@interface UFLDecalTableViewController ()
+@interface UFDecalTableViewController ()
 
 @end
 
-@implementation UFLDecalTableViewController
+@implementation UFDecalTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {

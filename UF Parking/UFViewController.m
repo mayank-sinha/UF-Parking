@@ -9,16 +9,16 @@
 #import "UFViewController.h"
 #import "UFDecalTableViewController.h"
 
-@interface UFLViewController ()
+@interface UFViewController ()
 
 @end
 
-@implementation UFLViewController
+@implementation UFViewController
 
 @synthesize mapView;
 
 
-- (void)uFLDecalTableViewControllerDidSelect:(UFLDecalTableViewController *)controller kml:(UFKMLObject *) kmlObject
+- (void)uFLDecalTableViewControllerDidSelect:(UFDecalTableViewController *)controller kml:(UFKMLObject *) kmlObject
 {
     //self.kmlLabel.text = kmlObject.file_name;
     //NSLog(@"Decal selected: %@",kmlObject.file_name);
@@ -136,13 +136,13 @@
     if ([segue.identifier isEqualToString:@"FilterSegue"]) {
         
         UINavigationController *navigationController = segue.destinationViewController;
-        UFLDecalTableViewController *uFLDecalTableViewController = [navigationController viewControllers][0];
+        UFDecalTableViewController *uFLDecalTableViewController = [navigationController viewControllers][0];
         uFLDecalTableViewController.delegate = self;
     }
 }
 
 
-- (void)uFLDecalTableViewControllerDidCancel:(UFLDecalTableViewController *)controller
+- (void)uFLDecalTableViewControllerDidCancel:(UFDecalTableViewController *)controller
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }

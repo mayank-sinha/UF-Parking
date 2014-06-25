@@ -9,17 +9,17 @@
 #import <UIKit/UIKit.h>
 #import "UFKMLObject.h"
 
-@class UFLDecalTableViewController;
+@class UFDecalTableViewController;
 
-@protocol UFLDecalTableViewControllerDelegate <NSObject>
-- (void)uFLDecalTableViewControllerDidCancel:(UFLDecalTableViewController *)controller;
-- (void)uFLDecalTableViewControllerDidSelect:(UFLDecalTableViewController *)controller kml:(UFKMLObject *) kmlObject;
+@protocol UFDecalTableViewControllerDelegate <NSObject>
+- (void)uFLDecalTableViewControllerDidCancel:(UFDecalTableViewController *)controller;
+- (void)uFLDecalTableViewControllerDidSelect:(UFDecalTableViewController *)controller kml:(UFKMLObject *) kmlObject;
 
 @end
 
-@interface UFLDecalTableViewController : UITableViewController //<UISearchDisplayDelegate>
+@interface UFDecalTableViewController : UITableViewController //<UISearchDisplayDelegate>
 
-@property (nonatomic, weak) id <UFLDecalTableViewControllerDelegate> delegate;
+@property (nonatomic, weak) id <UFDecalTableViewControllerDelegate> delegate;
 
 @property (strong, nonatomic) NSMutableArray *kmls;
 
