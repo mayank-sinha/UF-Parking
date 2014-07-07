@@ -64,6 +64,41 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+    // To add the images for the decal in each row
+    UIImageView *decalImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+    switch (indexPath.row) {
+        case 0:
+            decalImage.image = [UIImage imageNamed:@"first"];
+            break;
+        case 1:
+            decalImage.image = [UIImage imageNamed:@"second"];
+            break;
+        case 2:
+            decalImage.image = [UIImage imageNamed:@"second"];
+            break;
+        case 3:
+            decalImage.image = [UIImage imageNamed:@"second"];
+            break;
+        case 4:
+            decalImage.image = [UIImage imageNamed:@"second"];
+            break;
+        case 5:
+            decalImage.image = [UIImage imageNamed:@"second"];
+            break;
+        case 6:
+            decalImage.image = [UIImage imageNamed:@"second"];
+            break;
+        case 7:
+            decalImage.image = [UIImage imageNamed:@"second"];
+            break;
+        case 8:
+            decalImage.image = [UIImage imageNamed:@"second"];
+            break;
+        default:
+            break;
+    }
+    
+    cell.imageView.image = decalImage.image;
     UFKMLObject *kml = [self.kmls objectAtIndex:indexPath.row];
     cell.textLabel.text = kml.title;                //To display the title in the row
     cell.detailTextLabel.text = kml.subtitle;       //To display the subtitle in the row
