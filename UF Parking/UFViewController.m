@@ -20,9 +20,7 @@
 
 - (void)uFLDecalTableViewControllerDidSelect:(UFDecalTableViewController *)controller kml:(UFKMLObject *) kmlObject
 {
-    //self.kmlLabel.text = kmlObject.file_name;
-    //NSLog(@"Decal selected: %@",kmlObject.file_name);
-    selectedKML = @"allDecal";
+    //selectedKML = @"allDecal";
     selectedKML = kmlObject.file_name;
     NSLog(@"Decal selected is: %@", selectedKML);
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -92,8 +90,6 @@
     self.mapView.mapType = MKMapTypeStandard;
     self.mapView.showsUserLocation = YES;
     [self loadMapViewForSelectedDecal];
-    
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated

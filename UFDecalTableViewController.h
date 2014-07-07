@@ -17,13 +17,12 @@
 
 @end
 
-@interface UFDecalTableViewController : UITableViewController //<UISearchDisplayDelegate>
+@interface UFDecalTableViewController : UITableViewController
 
 @property (nonatomic, weak) id <UFDecalTableViewControllerDelegate> delegate;
 
 @property (strong, nonatomic) NSMutableArray *kmls;
 
-//@property (strong, nonatomic) NSArray *searchResults;
 
 - (IBAction)cancelButtonPressed:(UIBarButtonItem *)sender;
 
