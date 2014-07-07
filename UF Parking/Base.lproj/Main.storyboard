@@ -47,7 +47,7 @@
                     <navigationItem key="navigationItem" title="MAP VIEW" id="ZGN-fD-dO3">
                         <barButtonItem key="leftBarButtonItem" title="Decal" id="mCd-Kx-4Wh">
                             <connections>
-                                <segue destination="i6O-Kv-uer" kind="modal" id="oI8-ac-rFp"/>
+                                <segue destination="i6O-Kv-uer" kind="modal" identifier="FilterSegue" id="oI8-ac-rFp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

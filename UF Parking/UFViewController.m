@@ -20,7 +20,6 @@
 
 - (void)uFLDecalTableViewControllerDidSelect:(UFDecalTableViewController *)controller kml:(UFKMLObject *) kmlObject
 {
-    //selectedKML = @"allDecal";
     selectedKML = kmlObject.file_name;
     NSLog(@"Decal selected is: %@", selectedKML);
     [self dismissViewControllerAnimated:YES completion:nil];
