@@ -30,7 +30,6 @@
     //KML Parsing
     // Locate the path to the .kml file in the application's bundle
     // and parse it with the KMLParser.
-    
     NSLog(@"Decal selected here is: %@", selectedKML);
     NSString *path = [[NSBundle mainBundle] pathForResource:selectedKML ofType:@"kml"];
     NSURL *url = [NSURL fileURLWithPath:path];
@@ -75,9 +74,11 @@
 
 - (void)setDefaultMapView
 {
-    NSLog(@"Decal selected in viewDidAppear is: %@", selectedKML);
+    NSLog(@"Decal selected in setDefaultMapView is: %@", selectedKML);
     self.mapView.mapType = MKMapTypeStandard;
     self.mapView.showsUserLocation = YES;
+    [mapView removeAnnotations:mapView.annotations];
+    NSLog(@"Decal selected in setDefaultMapView after nil is: %@", selectedKML);
 }
 
 - (void)viewDidLoad
