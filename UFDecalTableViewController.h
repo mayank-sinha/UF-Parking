@@ -21,6 +21,8 @@
 
 @property (nonatomic, weak) id <UFDecalTableViewControllerDelegate> delegate;
 
+@property(nonatomic, readonly, retain) UIImageView *imageView;
+
 @property (strong, nonatomic) NSMutableArray *kmls;
 
 

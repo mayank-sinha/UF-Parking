@@ -58,50 +58,95 @@
     return self.kmls.count;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+    UIButton *decalButtonImage = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [decalButtonImage setFrame:CGRectMake(10, 10, 30, 30)];
+    
     // To add the images for the decal in each row
-    UIImageView *decalImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+    //UIImageView *decalImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
     switch (indexPath.row) {
         case 0:
-            decalImage.image = [UIImage imageNamed:@"first"];
+            //decalImage.image = [UIImage imageNamed:@"second"];
+            //cell.imageView.backgroundColor = [UIColor grayColor];
+            decalButtonImage.backgroundColor = [UIColor grayColor];
             break;
         case 1:
-            decalImage.image = [UIImage imageNamed:@"second"];
+            //decalImage.image = [UIImage imageNamed:@"second"];
+            decalButtonImage.backgroundColor = [UIColor redColor];
             break;
         case 2:
-            decalImage.image = [UIImage imageNamed:@"second"];
+            //decalImage.image = [UIImage imageNamed:@"second"];
+            decalButtonImage.backgroundColor = [UIColor magentaColor];
             break;
         case 3:
-            decalImage.image = [UIImage imageNamed:@"second"];
+            //decalImage.image = [UIImage imageNamed:@"second"];
+            decalButtonImage.backgroundColor = [UIColor greenColor];
             break;
         case 4:
-            decalImage.image = [UIImage imageNamed:@"second"];
+            //decalImage.image = [UIImage imageNamed:@"second"];
+            decalButtonImage.backgroundColor = [UIColor brownColor];
             break;
         case 5:
-            decalImage.image = [UIImage imageNamed:@"second"];
+            //decalImage.image = [UIImage imageNamed:@"second"];
+            decalButtonImage.backgroundColor = [UIColor orangeColor];
             break;
         case 6:
-            decalImage.image = [UIImage imageNamed:@"second"];
+            //decalImage.image = [UIImage imageNamed:@"second"];
+            decalButtonImage.backgroundColor = [UIColor blueColor];
             break;
         case 7:
-            decalImage.image = [UIImage imageNamed:@"second"];
+            //decalImage.image = [UIImage imageNamed:@"second"];
+            decalButtonImage.backgroundColor = [UIColor purpleColor];
             break;
         case 8:
-            decalImage.image = [UIImage imageNamed:@"second"];
+            //decalImage.image = [UIImage imageNamed:@"second"];
+            decalButtonImage.backgroundColor = [UIColor yellowColor];
+            break;
+        case 9:
+            //decalImage.image = [UIImage imageNamed:@"second"];
+            decalButtonImage.backgroundColor = [UIColor yellowColor];
+            break;
+        case 10:
+            //decalImage.image = [UIImage imageNamed:@"second"];
+            decalButtonImage.backgroundColor = [UIColor yellowColor];
+            break;
+        case 11:
+            //decalImage.image = [UIImage imageNamed:@"second"];
+            decalButtonImage.backgroundColor = [UIColor yellowColor];
+            break;
+        case 12:
+            //decalImage.image = [UIImage imageNamed:@"second"];
+            decalButtonImage.backgroundColor = [UIColor yellowColor];
+            break;
+        case 13:
+            //decalImage.image = [UIImage imageNamed:@"second"];
+            decalButtonImage.backgroundColor = [UIColor yellowColor];
+            break;
+        case 14:
+            //decalImage.image = [UIImage imageNamed:@"second"];
+            decalButtonImage.backgroundColor = [UIColor yellowColor];
+            break;
+        case 15:
+            //decalImage.image = [UIImage imageNamed:@"second"];
+            decalButtonImage.backgroundColor = [UIColor yellowColor];
+            break;
+        case 16:
+            //decalImage.image = [UIImage imageNamed:@"second"];
+            decalButtonImage.backgroundColor = [UIColor yellowColor];
             break;
         default:
             break;
     }
     
-    cell.imageView.image = decalImage.image;
+    //cell.imageView.image = decalImage.image;
     UFKMLObject *kml = [self.kmls objectAtIndex:indexPath.row];
     cell.textLabel.text = kml.title;                //To display the title in the row
     cell.detailTextLabel.text = kml.subtitle;       //To display the subtitle in the row
+    [cell addSubview:decalButtonImage];
     return cell;
     
 }
